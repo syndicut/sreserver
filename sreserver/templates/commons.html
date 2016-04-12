@@ -1,0 +1,17 @@
+{% macro status_class(status) -%}
+{%- set statuses = {
+    0: 'success',
+    1: 'warning',
+    2: 'danger',
+} -%}
+{{ statuses[status] }}
+{%- endmacro %}
+{% macro icon(status) -%}
+{% set statuses = {
+    0: 'success',
+    1: 'warning',
+    2: 'danger',
+} %}
+<span class="glyphicon glyphicon-asterisk text-{{ status_class(status) }}"></span>
+<!-- <span class="status-icon status_class(status)">●</span> -->
+{%- endmacro %}

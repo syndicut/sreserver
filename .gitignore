@@ -1,0 +1,6 @@
+sreserver/plugins/*
+configs/*
+!.gitkeep
+
+*.pyc
+venv
