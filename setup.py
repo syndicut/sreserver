@@ -14,5 +14,6 @@ setup(
         'requests',
         'flask-nav',
         'yaml',
+        'babel',
         ],
 )
